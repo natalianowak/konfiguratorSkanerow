@@ -47,7 +47,7 @@ function showNewRect() {
     area = Math.round(distance1 * distance2); //Obliczenie pola powierzchni prostokąta w km2
 
     var contentString = '<b>Wielkosc zaznaczonego obszaru to:</b><br>' + "szerokoc " + Math.round(distance1) + "km, dlugosc " + Math.round(distance2) +
-        " km, " + area + ' km2' + '<br>';
+        " km, " + area + ' km2' +'<br>';
 
 
     // Set the info window's content and position.
@@ -144,6 +144,17 @@ $(document).ready(function () {
 
     initMap();
     //wysylanie formularzy
+
+    var currentDate = new Date();
+    console.log(currentDate);
+
+    //do michala
+    $("#send").on('click', function () {
+        alert(currentDate + " " + "Wielkosc obszaru:"+ area + " km2 "+ "Koordynaty punktow: " + rectangle.getBounds()+ " Oplata za wybrany obszar: "+ price+ " zl" );
+
+    });
+
+
 
 
 });

@@ -143,14 +143,20 @@ $(document).ready(function () {
     });
 
     initMap();
+
     //wysylanie formularzy
 
     var currentDate = new Date();
     console.log(currentDate);
 
-    //do michala
+
     $("#send").on('click', function () {
-        alert(currentDate + " " + "Wielkosc obszaru:"+ area + " km2 "+ "Koordynaty punktow: " + rectangle.getBounds()+ " Oplata za wybrany obszar: "+ price+ " zl" );
+        alert(currentDate + " " + "Wielkosc obszaru:"+ area + " km2 "+
+            "Koordynaty punktow: " + rectangle.getBounds()+
+            " Oplata za wybrany obszar: "+ price+ " zl "
+             // "Wybrane opcje:  " + "option1: "+ $('input[id^="option1"]').prop('checked') ? true : false
+
+        );
 
     });
 

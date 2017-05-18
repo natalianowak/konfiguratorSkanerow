@@ -1,0 +1,25 @@
+{
+  "name": "michal",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "start": "browser-sync start --server --files **/* --serveStatic ./"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.14.0"
+  },
+  "engines": {
+    "node": ">=4.6",
+    "npm": ">=2.15"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "dependencies": {
+  }
+}

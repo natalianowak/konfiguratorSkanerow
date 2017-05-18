@@ -1,0 +1,68 @@
+<html>
+<head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbAQuqHmEVt-gNysXk5hEw6Bct-Hgb82Q&libraries=geometry"></script>
+    <script src="map.js"></script>
+    <!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&v=3&libraries=geometry"></script>-->
+
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Rectangles</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="map.css">
+
+</head>
+
+
+<body>
+
+
+<!--//geolokacja nie dziala-->
+<!--<p>Click the button to get your coordinates.</p>-->
+
+<!--<button onclick="getLocation()">Try It</button>-->
+
+<!--<p id="demo"></p>-->
+
+<div class="form1">
+    <p>Lokalizacja:</p>
+    <input id="address" type="text" placeholder="kod pocztowy, miasto, ulica"/>
+</div>
+
+
+<div id="map"></div>
+
+
+<div id="latitude"></div>
+<div id="longitude"></div>
+
+<div class="option">
+    <p>Wybrane funkcje:</p>
+    <input type="checkbox" id="option1"  > xx<br>
+    <input type="checkbox" id="option2"  > yy<br>
+    <input type="checkbox" id="option3" > zz<br>
+    <p>Koszt skanu:</p>
+    <p class="price">Zaznacz obaszar i wybierz dodatkowe opcje aby obliczyc cene za 15 dni</p>
+
+    <p>Kliknij wyslij aby potwierdzic zamowienie skanera.</p>
+
+
+    <form action="form">
+        <input id="form" type="submit" value="Wyslij and StayPRO."  />
+    </form>
+</div>
+
+
+
+
+</body>
+
+</html>

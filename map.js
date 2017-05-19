@@ -150,11 +150,36 @@ $(document).ready(function () {
     console.log(currentDate);
 
 
+    function ifOption1() {
+        if ($('input[id^="option1"]').prop('checked')) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+    function ifOption2() {
+        if ($('input[id^="option2"]').prop('checked')) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+    function ifOption3() {
+        if ($('input[id^="option3"]').prop('checked')) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+
     $("#send").on('click', function () {
-        alert(currentDate + " " + "Wielkosc obszaru:"+ area + " km2 "+
+        alert(currentDate + " " + "Wielkosc obszaru: "+ area + " km2 "+
             "Koordynaty punktow: " + rectangle.getBounds()+
-            " Oplata za wybrany obszar: "+ price+ " zl "
-             // "Wybrane opcje:  " + "option1: "+ $('input[id^="option1"]').prop('checked') ? true : false
+            ", Oplata za wybrany obszar: "+ price+ " zl "+
+              ", Wybrane opcje:  " + "option1: "+ ifOption1()+
+            ", option2: "+ ifOption2()+
+            ", option3: "+ ifOption3()
 
         );
 

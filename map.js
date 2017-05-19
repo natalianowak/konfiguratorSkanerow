@@ -47,7 +47,7 @@ function showNewRect() {
     area = Math.round(distance1 * distance2); //Obliczenie pola powierzchni prostokąta w km2
 
     var contentString = '<b>Wielkosc zaznaczonego obszaru to:</b><br>' + "szerokoc " + Math.round(distance1) + "km, dlugosc " + Math.round(distance2) +
-        " km, " + area + ' km2' +'<br>';
+        " km, " + area + ' km2' + '<br>';
 
 
     // Set the info window's content and position.
@@ -153,39 +153,43 @@ $(document).ready(function () {
     function ifOption1() {
         if ($('input[id^="option1"]').prop('checked')) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }
+
     function ifOption2() {
         if ($('input[id^="option2"]').prop('checked')) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }
+
     function ifOption3() {
         if ($('input[id^="option3"]').prop('checked')) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }
 
 
     $("#send").on('click', function () {
-        alert(currentDate + " " + "Wielkosc obszaru: "+ area + " km2 "+
-            "Koordynaty punktow: " + rectangle.getBounds()+
-            ", Oplata za wybrany obszar: "+ price+ " zl "+
-              ", Wybrane opcje:  " + "option1: "+ ifOption1()+
-            ", option2: "+ ifOption2()+
-            ", option3: "+ ifOption3()
-
+        //do michala
+        alert(currentDate + " " + "Wielkosc obszaru: " + area + " km2 " +
+            "Koordynaty punktow: " + rectangle.getBounds() +
+            ", Oplata za wybrany obszar: " + price + " zl " +
+            ", Wybrane opcje:  " + "option1: " + ifOption1() +
+            ", option2: " + ifOption2() +
+            ", option3: " + ifOption3()
+        );
+        //do uzytkownika
+        alert("Zamowienie skanera zostalo przyjete "+currentDate + " " + "Wielkosc obszaru: " + area + " km2 " +
+            ", Oplata za wybrany obszar: " + price + " zl ";
         );
 
     });
-
-
 
 
 });

@@ -186,7 +186,7 @@ $(document).ready(function () {
         );
         //do uzytkownika
         alert("Zamowienie skanera zostalo przyjete "+currentDate + " " + "Wielkosc obszaru: " + area + " km2 " +
-            ", Oplata za wybrany obszar: " + price + " zl ";
+            ", Oplata za wybrany obszar: " + price + " zl "
         );
 
     });

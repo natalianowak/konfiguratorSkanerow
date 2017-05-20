@@ -8,7 +8,7 @@
     <!--<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&v=3&libraries=geometry"></script>-->
 
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Rectangles</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css"
@@ -31,9 +31,22 @@
 <!--<button onclick="getLocation()">Try It</button>-->
 
 <!--<p id="demo"></p>-->
+<div class="header">
+   <p>konfigurator prywatnych skanerów</p>
+
+</div>
+
+<div class="about">
+    <p>Jak to działa?</p>
+    <p>1. Znajdź swoją lokalizację</p>
+    <p>2. Określ interesujący Cię obszar skanowania</p>
+    <p>3. Wybierz dodatkowe funkcje</p>
+    <p>4. Potwierdź zamówienie i czekaj na informację zwrotną</p>
+    <p>5. Ciesz się skanerem i bądź Najlepszym Trenerem w swojej okolicy!</p>
+</div>
 
 <div class="form1">
-    <p>Lokalizacja:</p>
+    <p>LOKALIZACJA:</p>
     <input id="address" type="text" placeholder="kod pocztowy, miasto, ulica"/>
 </div>
 
@@ -41,26 +54,30 @@
 <div id="map"></div>
 
 
-<div id="latitude"></div>
-<div id="longitude"></div>
+<!--<div id="latitude"></div>-->
+<!--<div id="longitude"></div>-->
 
-<div class="option">
-    <p>Wybrane funkcje:</p>
-    <input type="checkbox" id="option1"  > xx<br>
-    <input type="checkbox" id="option2"  > yy<br>
-    <input type="checkbox" id="option3" > zz<br>
-    <p>Koszt skanu:</p>
+<!--óóźźżśąćććććzęął-->
+
+<div class="footer">
+<div class="option">    <p>Funkcje dodatkowe:</p>
+    <input type="checkbox" id="option1" > statystyki stworków IV<br>
+    <input type="checkbox" id="option2"  > powiadomienia PUSH na komórkę<br>
+    <input type="checkbox" id="option3" > możliwość personalizacji mapy i kolorów<br>
+    <p>Cena:</p>
     <p class="price">Zaznacz obaszar i wybierz dodatkowe opcje aby obliczyc cene za 15 dni</p>
 
-    <p>Kliknij wyslij aby potwierdzic zamowienie skanera.</p>
 
 
 
-        <button id="send">Wyslij and StayPRO.</button>
+
+        <button id="send">Potwierdź</button>
+
+
 
 </div>
 
-
+</div>
 
 
 </body>

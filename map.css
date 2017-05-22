@@ -5,10 +5,16 @@
 
 *{
     font-family: Oswald;
+    font-size: 0.95em;
+}
+p{
+    margin: 0;
+    /*-webkit-margin-before: 0;*/
+    /*-webkit-margin-after: 0;*/
 }
 #map {
-    height: 50%;
-    width:90%;
+    height: 45%;
+    width:100%;
     margin:auto;
 }
 /* Optional: Makes the sample page fill the window. */
@@ -17,19 +23,104 @@ html, body {
     margin: 0;
     padding: 0;
 }
+.header{
+    background-color: 033FC8;
+    margin:0;
+    clear: both;
+    color: white;
+height:8%;
+}
+.header p{
+    margin-left:3.5%;
+}
 
+.break{
+    background-color: FBFC03;
+    height: 0.2%;
+    clear: both;
+}
+.about{
+    background-color: black;
+    color: white;
+    width:66.67%;
+    float:left;
+    height:19%;
+
+}
+.about p{
+    margin-left: 5%;
+}
+.first{
+    margin-top: 1%;
+}
 #address{
-    width: 50%;
-    margin-right: 10%;
+
+    background-color: FBFC03;
+    font-family: Oswald;
+    color: black;
+    border-width: 0;
+    /*border-radius: 4%;*/
+
+    padding-left: 3%;
+    padding-right: 45%;
 
 }
+.bottom{
+     position: absolute; bottom:11%;
+
+ }
 .form1{
-    margin-right: auto;
-    margin-left: 5%;
-    margin-bottom:1%;
-    margin-top:1%;
+    position: relative;
+    height:19%;
+    background-color: black;
+    float: right;
+
+    width:33.33%;
 }
-.option{
-    margin-left: 5%;
+.form1 p{
+
     margin-bottom: 1%;
+}
+
+
+.option{
+height: 27%;
+    margin-bottom: 1%;
+    width:66.67%;
+    float:left;
+background-color: black;
+}
+.option input{
+    margin-left:5%;
+}
+.option p{
+    margin-left:5%;
+}
+
+#send{
+    background-color: FBFC03;
+    border-width: 0;
+    /*border-radius: 4%;*/
+    font-family: Oswald;
+}
+.footer{
+    background-color: black;
+    color: white;
+}
+.priceDiv{
+    display: inline;
+    height: 27%;
+    background-color: black;
+float: right;
+    width:33.33%;
+
+}
+.checkbox-inline{
+
+    width:27%;
+}
+
+
+.color1{
+    color:FBFC03;
 }

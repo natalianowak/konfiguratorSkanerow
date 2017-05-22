@@ -10,6 +10,7 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="UTF-8">
     <title>Rectangles</title>
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -32,50 +33,50 @@
 
 <!--<p id="demo"></p>-->
 <div class="header">
-   <p>konfigurator prywatnych skanerów</p>
+   <p><span>#STAY<span class="color1">PRO</span></span> konfigurator prywatnych skanerów</p>
 
 </div>
+<div class="break"></div>
 
 <div class="about">
-    <p>Jak to działa?</p>
-    <p>1. Znajdź swoją lokalizację</p>
-    <p>2. Określ interesujący Cię obszar skanowania</p>
-    <p>3. Wybierz dodatkowe funkcje</p>
-    <p>4. Potwierdź zamówienie i czekaj na informację zwrotną</p>
-    <p>5. Ciesz się skanerem i bądź Najlepszym Trenerem w swojej okolicy!</p>
+    <p class="color1 first">Jak to działa?</p>
+    <p><span class="color1">1: </span> Znajdź swoją lokalizację</p>
+    <p><span class="color1">2: </span> Określ interesujący Cię obszar skanowania</p>
+    <p><span class="color1">3: </span> Wybierz dodatkowe funkcje</p>
+    <p><span class="color1">4: </span> Potwierdź zamówienie i czekaj na informację zwrotną</p>
+    <p><span class="color1">5: </span> Ciesz się skanerem i bądź Najlepszym Trenerem w swojej okolicy!</p>
 </div>
 
 <div class="form1">
-    <p>LOKALIZACJA:</p>
-    <input id="address" type="text" placeholder="kod pocztowy, miasto, ulica"/>
+    <div class="bottom">
+    <p style="color:white">LOKALIZACJA:</p>
+    <input id="address" type="text" placeholder="Bochnia, Poland"/>
+    </div>
 </div>
 
-
+<div class="break"></div>
 <div id="map"></div>
 
-
+<div class="break"></div>
 <!--<div id="latitude"></div>-->
 <!--<div id="longitude"></div>-->
 
 <!--óóźźżśąćććććzęął-->
 
 <div class="footer">
-<div class="option">    <p>Funkcje dodatkowe:</p>
+<div class="option">    <p class="first" style="color:FBFC03">Funkcje dodatkowe:</p>
     <input type="checkbox" id="option1" > statystyki stworków IV<br>
-    <input type="checkbox" id="option2"  > powiadomienia PUSH na komórkę<br>
-    <input type="checkbox" id="option3" > możliwość personalizacji mapy i kolorów<br>
-    <p>Cena:</p>
-    <p class="price">Zaznacz obaszar i wybierz dodatkowe opcje aby obliczyc cene za 15 dni</p>
-
-
-
-
-
-        <button id="send">Potwierdź</button>
-
-
-
+        <input type="checkbox" id="option2"  > powiadomienia PUSH na komórkę<br>
+             <input type="checkbox" id="option3" > możliwość personalizacji mapy i kolorów<br>
 </div>
+    <div class="priceDiv">
+         <p class="color1">Cena:</p>
+        <p class="price"></p>
+        <button id="send">POTWIERDŹ</button>
+
+    </div>
+
+
 
 </div>
 

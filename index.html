@@ -10,7 +10,7 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="UTF-8">
     <title>Rectangles</title>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald"/>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
@@ -35,9 +35,10 @@
 <div class="header">
     <img class="logo" src="img/LOGO.png">
     <img src="img/liniaDzielaca.png">
-    <p>konfigurator prywatnych skanerów</p>
-    <img class="faceebok" src="img/facebook.png">
-
+    <p><span class="light">konfigurator </span><span class="bold">prywatnych</span> <span class="light">skanerów</span></p>
+    <a href="https://www.facebook.com/PokeProPL/?fref=ts" target="_blank">
+        <img class="faceebok" src="img/facebook.png">
+    </a>
 
 
 </div>
@@ -45,22 +46,25 @@
 
 <div class="about">
     <img class="warstwa" style="position: absolute; z-index: 0" src="img/Warstwa_4.png">
-    <p class="color1 first">Jak to działa?</p>
-    <p><span class="color1">1: </span> Znajdź swoją lokalizację</p>
-    <p><span class="color1">2: </span> Określ interesujący Cię obszar skanowania</p>
-    <p><span class="color1">3: </span> Wybierz dodatkowe funkcje</p>
-    <p><span class="color1">4: </span> Potwierdź zamówienie i czekaj na informację zwrotną</p>
-    <p><span class="color1">5: </span> Ciesz się skanerem i bądź Najlepszym Trenerem w swojej okolicy!</p>
+    <p class="color1 first bold">Jak to działa?</p>
+    <p><span class="color1 bold">1: </span> <span class="light">Znajdź swoją lokalizację</span></p>
+    <p><span class="color1 bold">2: </span> <span class="light">Określ interesujący Cię obszar skanowania</span></p>
+    <p><span class="color1 bold">3: </span> <span class="light">Wybierz dodatkowe funkcje</span></p>
+    <p><span class="color1 bold">4: </span> <span class="light">Potwierdź zamówienie i czekaj na informację zwrotną</span></p>
+    <p><span class="color1 bold">5: </span> <span class="light">Ciesz się skanerem i bądź Najlepszym Trenerem w swojej okolicy!</span></p>
+    <div class="blueLine"></div>
 </div>
 
 <div class="form1">
     <div class="bottom">
-    <p style="color:white">LOKALIZACJA:</p>
-    <input id="address" type="text" placeholder="Bochnia, Poland"/>
+        <p class="light" style="color:white">LOKALIZACJA:</p>
+        <input id="address" type="text" placeholder="Bochnia, Poland"/>
     </div>
 </div>
 
-<div style="z-index: 3" class="break"></div>
+
+<div style="position: relative" class="break"></div>
+
 <div id="map"></div>
 
 <div class="break"></div>
@@ -74,40 +78,40 @@
 
     <img style="position: absolute; z-index: 0" src="img/miastoGradient.png">
     <img style="position: absolute; z-index: 1;  bottom: 0;" src="img/miasto%20.png">
-<div style="position: absolute; width: 100%">
-<div style=" z-index: 2" class="option">
-    <p class="first" style="color:FBFC03">Funkcje dodatkowe:</p>
-    <div class="margin">
-    <div class="line">
-        <input type="checkbox" id="option1" > statystyki stworków IV<br>
-    </div>
+    <div style="position: absolute; width: 100%">
+        <div style=" z-index: 2" class="option">
+            <p class="first bold" style="color:FBFC03">Funkcje dodatkowe:</p>
+            <div class="margin">
+                <div class="line">
+                    <input type="checkbox" id="option1"> <span class="light">statystyki stworków IV</span><br>
+                </div>
 
-    <div class="line">
-        <input type="checkbox" id="option2"  > powiadomienia PUSH na komórkę<br>
-    </div>
-    <div class="line">
-             <input type="checkbox" id="option3" > możliwość personalizacji mapy i kolorów<br>
-    </div>
-    </div>
-</div>
-
-
-    <div style="z-index: 2" class="priceDiv">
-        <div class="second">
-        <div class="line2 line3">
-         <p  class="color1">Cena:</p>
+                <div class="line">
+                    <input type="checkbox" id="option2"> <span class="light">powiadomienia PUSH na komórkę</span><br>
+                </div>
+                <div class="line">
+                    <input type="checkbox" id="option3"> <span class="light">możliwość personalizacji mapy i kolorów</span><br>
+                </div>
             </div>
-        <div class="line2 line3">
-        <p class="price"></p>
         </div>
-        <div class="line23">
-        <button id="send">POTWIERDŹ</button>
-        </div>
+
+
+        <div style="z-index: 2" class="priceDiv">
+            <div class="second">
+                <div class="line2 line3">
+                    <p class="color1 bold">Cena:</p>
+                </div>
+                <div class="line2 line3">
+                    <p class="price light"></p>
+                </div>
+                <div class="line23">
+                    <button class="bold" id="send">POTWIERDŹ</button>
+                </div>
+            </div>
+
         </div>
 
     </div>
-
-</div>
 
     <div style="z-index: 2; position: absolute; font-size: 0.8em" class="stayPro">KEEP CALM AND #STAYPRO</div>
 </div>

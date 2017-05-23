@@ -11,6 +11,7 @@ p{
     margin: 0;
     /*-webkit-margin-before: 0;*/
     /*-webkit-margin-after: 0;*/
+
 }
 #map {
     height: 45%;
@@ -24,20 +25,33 @@ html, body {
     padding: 0;
 }
 .header{
-    background-color: 033FC8;
+    background-color: #033fc8;
     margin:0;
     clear: both;
     color: white;
-height:8%;
+    height:9.5%;
 }
 .header p{
-    margin-left:3.5%;
-    padding-top:0.3%;
 
+    margin-left:1.5%;
+    /*padding-top:0.3%;*/
+    display: inline;
+}
+.logo{
+    margin-left:3.5%;
+
+    margin-right:1.5%;
+    vertical-align: middle;
+    /*display: table-cell;*/
+}
+.faceebok{
+    float: right;
+    margin-right:5%;
+    vertical-align: middle;
 }
 
 .break{
-    background-color: FBFC03;
+    background-color: #FBFC03;
     height: 0.2%;
     clear: both;
 }
@@ -60,7 +74,7 @@ height:8%;
 }
 #address{
 
-    background-color: FBFC03;
+    background-color: #FBFC03;
     font-family: Oswald;
     color: black;
     border-width: 0;
@@ -94,7 +108,7 @@ height: 27%;
     margin-bottom: 1%;
     width:66.67%;
     float:left;
-background-color: black;
+/*background-color: black;*/
 }
 
 .option p{
@@ -116,7 +130,7 @@ background-color: black;
 
 }
 #send{
-    background-color: FBFC03;
+    background-color: #FBFC03;
     border-width: 0;
     /*border-radius: 4%;*/
     font-family: Oswald;
@@ -126,11 +140,13 @@ background-color: black;
 .footer{
     background-color: black;
     color: white;
+    width: 100%;
+    height:47%
 }
 .priceDiv{
     display: inline;
     height: 27%;
-    background-color: black;
+    /*background-color: black;*/
 float: right;
     width:33.33%;
 
@@ -150,7 +166,7 @@ float: right;
     margin-top: 0.5%;
 }
 .color1{
-    color:FBFC03;
+    color:#fbfc03;
 }
 .big{
     font-size: 2em;
@@ -158,13 +174,22 @@ float: right;
 .stayPro{
     color: white;
     background-color: #033FC8;
-    width: 15%;
-    float: right;
-    margin-right:17%;
+    width: 12%;
     text-align: center;
+    bottom: 0;
+    margin-left: 76%;
 
 
 }
+.bold{
+    font-weight: bold;
+}
+.light{
+    font-weight: 200;
+
+}
+
+
 
 @media only screen and (max-width: 1024px) {
     .about{
@@ -223,6 +248,9 @@ float: right;
     .stayPro{
         text-align: center;
         width: 100%;
-        margin-right: 0;
+        margin-left: 0;
+    }
+    .warstwa{
+
     }
 }

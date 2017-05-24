@@ -68,7 +68,8 @@ a{
 
 .about {
 
-background-image: url("img/Warstwa_4.png");
+    background-image: url("img/Warstwa_4.png");
+    background-repeat:no-repeat ;
     display: flex;
     align-items: center;
     background-color: black;

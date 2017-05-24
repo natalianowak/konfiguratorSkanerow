@@ -15,7 +15,7 @@ p {
 }
 
 #map {
-    height: 45%;
+    height: 43%;
     width: 100%;
     margin: auto;
 }
@@ -29,7 +29,7 @@ html, body {
 
 .header {
     background-color: #033fc8;
-    margin: 0;
+
     clear: both;
     color: white;
     height: 9.5%;
@@ -37,26 +37,28 @@ html, body {
 
 .header p {
 
+
     margin-left: 1.5%;
-    /*padding-top:0.3%;*/
+
     display: inline;
 }
-
+a{
+    /*display: block;*/
+}
 .logo {
     margin-left: 3.5%;
-
     margin-right: 1.5%;
-    vertical-align: middle;
-    /*display: table-cell;*/
+
 }
 
 .faceebok {
     float: right;
-    margin-right: 5%;
-    vertical-align: middle;
+    margin-right: 3.5%;
+
 }
 
 .break {
+
     background-color: #FBFC03;
     height: 0.2%;
     clear: both;
@@ -67,13 +69,14 @@ html, body {
     color: white;
     width: 66.67%;
     float: left;
-    height: 21%;
+    height: 19%;
 
 }
 
 .about p {
     margin-left: 5%;
     position: relative;
+    font-size: 0.9em;
 }
 
 .first {
@@ -99,7 +102,7 @@ html, body {
 
 .bottom {
     position: absolute;
-    bottom: 11%;
+    bottom: 6.5%;
     width: auto;
 
 }
@@ -108,7 +111,7 @@ html, body {
 }
 .form1 {
     position: relative;
-    height: 21%;
+    height: 19%;
     background-color: black;
     float: right;
 
@@ -189,7 +192,9 @@ html, body {
     margin-left: 5%;
     margin-top: 0.5%;
 }
-
+.margin .line{
+    font-size:0.9em;
+}
 .color1 {
     color: #fbfc03;
 }
@@ -210,10 +215,12 @@ html, body {
 
 .bold {
     font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .light {
     font-weight: 200;
+
 
 }
 
@@ -292,6 +299,9 @@ html, body {
     }
 
     .warstwa {
+        display: none;
+    }
+    .faceebok{
         display: none;
     }
 }

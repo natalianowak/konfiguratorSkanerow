@@ -28,6 +28,8 @@ html, body {
 }
 
 .header {
+    display: flex;
+    align-items: center;
     background-color: #033fc8;
 
     clear: both;
@@ -65,6 +67,10 @@ a{
 }
 
 .about {
+
+
+    display: flex;
+    align-items: center;
     background-color: black;
     color: white;
     width: 66.67%;

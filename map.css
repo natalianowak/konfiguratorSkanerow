@@ -243,6 +243,7 @@ right:11%
         background-color: #022574;
         width: 100%;
         height: auto;
+        background-image: none;
 
     }
 
@@ -297,13 +298,15 @@ right:11%
     }
 
     #send {
+        /*margin: 0;*/
         width: 100%;
         display: block;
         float: right;
     }
 
     .second {
-
+        margin: 0;
+        width: 100%;
     }
 
     .stayPro {

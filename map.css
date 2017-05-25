@@ -14,7 +14,10 @@ p {
 
 }
 
+
 #map {
+    z-index: 2;
+    display: flex;
     height: 43%;
     width: 100%;
     margin: auto;
@@ -60,9 +63,10 @@ a{
 }
 
 .break {
-
+    position: relative;
+    z-index: 3;
     background-color: #FBFC03;
-    height: 0.2%;
+    height: 2px;
     clear: both;
 }
 
@@ -101,7 +105,7 @@ a{
 width: 100%;
     padding-left: 3%;
     /*padding-right: 45%;*/
-    margin-right:5%;
+    /*margin-right:5%;*/
 
 }
 
@@ -180,16 +184,20 @@ right:11%
 }
 
 .priceDiv {
+    position: relative;
     display: inline;
-    height: 27%;
+    /*height: 27%;*/
     /*background-color: black;*/
     float: right;
     width: 33.33%;
 
 }
 .second{
+    display: flex;
+    align-items: stretch;
+    position: absolute;
     width: 89%;
-    margin-right: 11%;
+    right: 11%;
 
     margin-top: 2%;
 }

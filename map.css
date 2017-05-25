@@ -225,7 +225,9 @@ width: 350px;
 .color1 {
     color: #fbfc03;
 }
-
+.mobile{
+    margin-left:60px;
+}
 .big {
     font-size: 2em;
 }
@@ -264,14 +266,18 @@ input[type=checkbox] {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+
 }
 
 input[type=checkbox]:not(:checked) {
     background-image: url("img/checkbox2.png");
+
 }
 
 input[type=checkbox]:checked {
-    background-image: url("img/checkbox1.png");
+    background-image: url("img/odchaczone.png");
+
+
 }
 
 
@@ -286,7 +292,15 @@ input[type=checkbox]:checked {
         background-image: none;
 
     }
-
+    .about p{
+        margin-top:5px;
+        margin-bottom: 5px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+.logo{
+    margin-left: 25px;
+}
     .form1 {
         float: left;
         width: 100%;
@@ -294,10 +308,15 @@ input[type=checkbox]:checked {
     }
 
     .bottom {
-        margin-left: 5%;
+bottom: 15px;
+        top:15px;
         width: auto;
+        right: 25px;
+        left:25px;
     }
-
+#address{
+    width: 100%;
+}
     .line {
         display: block;
         /*margin-right:2%;*/
@@ -305,7 +324,7 @@ input[type=checkbox]:checked {
 
     .line2 {
         display: inline-block;
-        margin-left: 5%;
+        /*margin-left: 5%;*/
         margin-bottom: 5%;
 
     }
@@ -324,9 +343,19 @@ input[type=checkbox]:checked {
     }
 
     .option {
+        margin-left: 25px;
+        margin-right:25px;
         width: 100%;
         height: auto;
         margin-bottom: 0;
+        background-color: black;
+    }
+    .option p{
+        margin-left: 0;
+        /*margin-right: 25%;*/
+    }
+    .mobile{
+        margin-left: 0;
     }
 
     .priceDiv {
@@ -345,7 +374,8 @@ input[type=checkbox]:checked {
     }
 
     .second {
-        margin: 0;
+        right: 25px;
+        left: 25px;
         width: 100%;
     }
 
@@ -353,6 +383,8 @@ input[type=checkbox]:checked {
         text-align: center;
         width: 100%;
         margin-left: 0;
+        right: 0;
+        bottom:0;
     }
 
     .warstwa {

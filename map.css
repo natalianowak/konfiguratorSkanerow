@@ -209,6 +209,9 @@ width: 350px;
 .price {
     color: white;
 }
+.priceCena{
+    width: 20%;
+}
 
 .checkbox-inline {
 
@@ -285,6 +288,9 @@ input[type=checkbox]:checked {
 
 
 @media only screen and (max-width: 1024px) {
+    .header{
+        height: 75px;
+    }
     .about {
         background-color: #022574;
         width: 100%;
@@ -365,7 +371,10 @@ bottom: 15px;
         height: auto;
         margin-top: 0;
     }
-
+.priceCena{
+    margin-left: 25px;
+    width:auto;
+}
     #send {
         /*margin: 0;*/
         width: 100%;
@@ -374,9 +383,12 @@ bottom: 15px;
     }
 
     .second {
-        right: 25px;
-        left: 25px;
+        /*right: 25px;*/
+        /*left: 25px;*/
         width: 100%;
+        display: block;
+        right: 0;
+
     }
 
     .stayPro {

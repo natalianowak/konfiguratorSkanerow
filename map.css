@@ -246,6 +246,31 @@ right:11%
 
 }
 
+input[type=checkbox] {
+    display: inline-block;
+    cursor: pointer;
+    display: block;
+    width: 10px;
+    height: 10px;
+    -webkit-appearance: none;
+    outline: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+input[type=checkbox]:not(:checked) {
+    background-image: url("img/checkbox2.png");
+}
+
+input[type=checkbox]:checked {
+    background-image: url("img/checkbox1.png");
+}
+
+
+
+
+
 @media only screen and (max-width: 1024px) {
     .about {
         background-color: #022574;

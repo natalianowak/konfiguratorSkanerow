@@ -27,8 +27,6 @@ function countFinalPrice() {
     }
 
     $('.price').text(price + 'zl / 15 dni');
-
-
 }
 
 /** @this {google.maps.Rectangle} */
@@ -48,7 +46,6 @@ function showNewRect() {
 
     var contentString = '<b>Wielkosc zaznaczonego obszaru to:</b><br>' + area + ' km2' + '<br>';
 
-
     // Set the info window's content and position.
     infoWindow.setContent(contentString);
     infoWindow.setPosition(ne);
@@ -56,7 +53,6 @@ function showNewRect() {
     infoWindow.open(map);
 
     // oblicz cene tylko za powierzchnie bez dodatkowych opcji
-
     countFinalPrice();
 }
 
@@ -67,7 +63,7 @@ function moveRect(lat, lon) {
     map = new google.maps.Map(mapElement, {
         center: {lat: lat, lng: lon},
         zoom: 9,
-        styles:[
+        styles: [
             {
                 "featureType": "all",
                 "elementType": "geometry",
@@ -203,7 +199,6 @@ function moveRect(lat, lon) {
         ]
     });
 
-
     //GEOCODIFICACION
     geocoder = new google.maps.Geocoder();
 
@@ -213,7 +208,6 @@ function moveRect(lat, lon) {
         east: map.center.lng() + 0.2500,
         west: map.center.lng() - 0.2500
     };
-
 
     // Define the rectangle and set its editable property to true.
     rectangle = new google.maps.Rectangle({
@@ -263,66 +257,38 @@ $(document).ready(function () {
 
     //obslugiwanie dodatkowych opcji
 
-    $('input[id^="option1"]').click(function () {
+    var optionClickedHandler = function () {
         countFinalPrice();
-    });
+    };
 
-    $('input[id^="option2"]').click(function () {
-        countFinalPrice();
-    });
-
-    $('input[id^="option3"]').click(function () {
-        countFinalPrice();
-    });
+    $('input[id^="option1"]').click(optionClickedHandler);
+    $('input[id^="option2"]').click(optionClickedHandler);
+    $('input[id^="option3"]').click(optionClickedHandler);
 
     initMap();
 
     //wysylanie formularzy
-
-    var currentDate = new Date();
-    console.log(currentDate);
-
-
-    function ifOption1() {
-        if ($('input[id^="option1"]').prop('checked')) {
+    function isOption(optionId) {
+        if ($('input[id^='+ optionId+ ']').prop('checked')) {
             return true;
         } else {
             return false;
         }
     }
-
-    function ifOption2() {
-        if ($('input[id^="option2"]').prop('checked')) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
-    function ifOption3() {
-        if ($('input[id^="option3"]').prop('checked')) {
-            return true;
-        } else {
-            return false;
-        }
-    }
-
 
     $("#send").on('click', function () {
+        var currentDate = new Date();
         //do michala
         alert(currentDate + " " + "Wielkosc obszaru: " + area + " km2 " +
             "Koordynaty punktow: " + rectangle.getBounds() +
             ", Oplata za wybrany obszar: " + price + " zl " +
-            ", Wybrane opcje:  " + "option1: " + ifOption1() +
-            ", option2: " + ifOption2() +
-            ", option3: " + ifOption3()
+            ", Wybrane opcje:  " + "option1: " + isOption("option1") +
+            ", option2: " + isOption("option2") +
+            ", option3: " + isOption("option3")
         );
         //do uzytkownika
         alert("Zamowienie skanera zostalo przyjete "+currentDate + " " + "Wielkosc obszaru: " + area + " km2 " +
             ", Oplata za wybrany obszar: " + price + " zl "
         );
-
     });
-
-
 });

@@ -14,11 +14,11 @@ p {
 
 }
 
-
 #map {
     z-index: 2;
     display: flex;
     height: 43%;
+    min-height: 300px;
     width: 100%;
     margin: auto;
 }
@@ -37,19 +37,20 @@ html, body {
 
     clear: both;
     color: white;
-    height: 9.5%;
+    height: 73.14px;
 }
 
 .header p {
-
 
     margin-left: 1.5%;
 
     display: inline;
 }
-a{
+
+a {
     /*display: block;*/
 }
+
 .logo {
     margin-left: 60px;
     margin-right: 1.5%;
@@ -58,7 +59,11 @@ a{
 
 .faceebok {
     float: right;
-    margin-right: 3.5%;
+    margin-right: 60px;
+    position: absolute;
+    bottom:10%;
+    right: 0;
+
 
 }
 
@@ -73,7 +78,7 @@ a{
 .about {
 
     background-image: url("img/Warstwa_4.png");
-    background-repeat:no-repeat ;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     background-color: black;
@@ -81,6 +86,7 @@ a{
     width: 66.67%;
     float: left;
     height: 19%;
+    min-height: 131px;
 
 }
 
@@ -94,15 +100,14 @@ a{
     margin-top: 1%;
 }
 
-
 #address {
-    height:30px;
+    height: 30px;
     background-color: #FBFC03;
     font-family: Oswald;
     color: black;
     border-width: 0;
     /*border-radius: 4%;*/
-width: 350px;
+    width: 350px;
     padding-left: 3%;
     /*padding-right: 45%;*/
     /*margin-right:5%;*/
@@ -114,16 +119,18 @@ width: 350px;
     bottom: 15px;
     width: 350px;
     right: 60px;
-/*right:11%*/
-
+    /*right:11%*/
 
 }
-.blueline{
+
+.blueline {
     display: none;
 }
+
 .form1 {
     position: relative;
     height: 19%;
+    min-height: 131px;
     background-color: black;
     float: right;
 
@@ -145,7 +152,7 @@ width: 350px;
 
 .option p {
     margin-left: 60px;
-    margin-bottom:2px;
+    margin-bottom: 2px;
 }
 
 .line {
@@ -169,7 +176,7 @@ width: 350px;
 
 #send {
     width: 200px;
-    height:30px;
+    height: 30px;
     background-color: #FBFC03;
     border-width: 0;
     /*border-radius: 4%;*/
@@ -184,7 +191,9 @@ width: 350px;
     background-color: black;
     color: white;
     width: 100%;
-    height: 27%
+    height: 27%;
+    min-height: 200px;
+    max-height: 240px;
 }
 
 .priceDiv {
@@ -196,8 +205,9 @@ width: 350px;
     width: 33.33%;
 
 }
-.second{
-    right:60px;
+
+.second {
+    right: 60px;
     display: flex;
     align-items: stretch;
     position: absolute;
@@ -206,10 +216,12 @@ width: 350px;
 
     margin-top: 10px;
 }
+
 .price {
     color: white;
 }
-.priceCena{
+
+.priceCena {
     width: 20%;
 }
 
@@ -219,18 +231,21 @@ width: 350px;
 }
 
 /*.margin {*/
-    /*margin-left: 5%;*/
-    /*margin-top: 0.5%;*/
+/*margin-left: 5%;*/
+/*margin-top: 0.5%;*/
 /*}*/
-.margin .line{
-    font-size:0.9em;
+.margin .line {
+    font-size: 0.9em;
 }
+
 .color1 {
     color: #fbfc03;
 }
-.mobile{
-    margin-left:60px;
+
+.mobile {
+    margin-left: 60px;
 }
+
 .big {
     font-size: 2em;
 }
@@ -244,7 +259,7 @@ width: 350px;
     width: 200px;
     text-align: center;
     bottom: 0;
-    right:60px;
+    right: 60px;
 
 }
 
@@ -255,7 +270,6 @@ width: 350px;
 
 .light {
     font-weight: 200;
-
 
 }
 
@@ -279,69 +293,91 @@ input[type=checkbox]:not(:checked) {
 }
 
 input[type=checkbox]:checked {
+
     background-image: url("img/odchaczone.png");
-
+    background-color: white;
+    border-radius: 2px;
 
 }
-.miastoMobile{
+.faceebokMobile{
     display: none;
 }
-.miastoGradient{
+.miastoMobile {
+    display: none;
+}
+
+.miastoGradient {
     display: none;
 
 }
 
+@media screen and (min-device-width: 1000px) and (max-device-width: 1200px) {
 
-
-
-@media only screen and (max-width: 1024px) {
-    *{
-        font-size:0.97em;
+    .line {
+        display: block;
+        /*margin-right:2%;*/
     }
-    .header{
-        height: 60px;
+}
+
+@media only screen and (max-width: 1000px) {
+    * {
+        font-size: 0.97em;
     }
-    .header p{
+
+    .header {
+        height: 46px;
+    }
+
+    .header p {
         margin-right: 20px;
     }
+
     .about {
         background-color: #022574;
         width: 100%;
         height: auto;
         background-image: none;
+        padding-top: 6px;
 
     }
-    .about p{
-        margin-top:5px;
-        margin-bottom: 5px;
+
+    .about p {
+        margin-top: 4px;
+        margin-bottom: 4px;
         margin-left: 20px;
         margin-right: 20px;
     }
-.logo{
-    margin-left: 20px;
-    height: 30px;
-    width:130px;
-}
-.dzielaca{
-    height: 22px;
-    width: 1px;
-}
+
+    .logo {
+        margin-left: 20px;
+        height: 30px;
+        width: 130px;
+    }
+
+    .dzielaca {
+        height: 22px;
+        width: 1px;
+    }
+
     .form1 {
+        min-height: 96px;
         float: left;
         width: 100%;
-        height: 15%;
+        height: 96px;
     }
 
     .bottom {
-bottom: 15px;
-        top:15px;
+        bottom: 15px;
+        top: 15px;
         width: auto;
         right: 20px;
-        left:20px;
+        left: 20px;
     }
-#address{
-    width: 100%;
-}
+
+    #address {
+        width: 100%;
+    }
+
     .line {
         display: block;
         /*margin-right:2%;*/
@@ -353,14 +389,16 @@ bottom: 15px;
         margin-bottom: 5%;
 
     }
-.blueline{
-    margin-top: 1%;
-    display: block;
-    background-color:#01133c;
-    height:2%;
-    width: 100%;
-    position: relative;
-}
+
+    .blueline {
+        margin-top: 10px;
+        display: block;
+        background-color: #01133c;
+        height: 15px;
+        width: 100%;
+        position: relative;
+    }
+
     .line23 {
         display: inline-block;
         width: 100%;
@@ -370,17 +408,20 @@ bottom: 15px;
     .option {
         position: relative;
         margin-left: 20px;
-        margin-right:20px;
+        margin-right: 20px;
         width: 100%;
         height: auto;
         margin-bottom: 0;
         background-color: black;
+        line-height: 27px;
     }
-    .option p{
+
+    .option p {
         margin-left: 0;
         /*margin-right: 25%;*/
     }
-    .mobile{
+
+    .mobile {
         margin-left: 0;
         font-size: 1.2em;
     }
@@ -392,13 +433,15 @@ bottom: 15px;
         height: auto;
         margin-top: 0;
     }
-.priceCena{
-    margin-left: 20px;
-    width:auto;
-}
+
+    .priceCena {
+        margin-left: 20px;
+        width: auto;
+    }
+
     #send {
         /*margin: 0;*/
-        height:40px;
+        height: 40px;
         width: 100%;
         display: block;
         float: right;
@@ -411,7 +454,7 @@ bottom: 15px;
         width: 100%;
         display: block;
         right: 0;
-        font-size:1.5em;
+        font-size: 1.5em;
 
     }
 
@@ -421,35 +464,63 @@ bottom: 15px;
         width: 100%;
         margin-left: 0;
         right: 0;
+        height: 25px;
 
     }
 
     .warstwa {
         display: none;
     }
-    .faceebok{
+
+    .faceebok {
         display: none;
     }
-    .miasto{
-       display: none;
-    }
-    .gradient{
+
+    .miasto {
         display: none;
     }
-    .miastoMobile{
+
+    .gradient {
+        display: none;
+    }
+
+    .miastoMobile {
+        display: inherit;
         z-index: 1;
         position: absolute;
-        display: block;
+        bottom: 0;
+        visibility: visible;
         width: 100%;
+        height: 150px;
+        /*bottom: -165px;  */
     }
-    .miastoGradient{
+
+    .miastoGradient {
+        display: inherit;
         z-index: 0;
-        position: relative;
-        display: block;
+        position: absolute;
+        bottom: 0;
+        visibility: visible;
         width: 100%;
-        height:165px;
+        height: 165px;
+        /*background-image: url("img/miastoMobile.png");*/
     }
-    .footer{
+
+    .faceebokMobile{
+        display: inherit;
+        z-index: 2;
+        bottom: 20px;
+        right: 45%;
+        left: 45%;
+    }
+    .footer {
         height: 387px;
+    }
+    .img{
+        height: 180px;
+        display: inherit;
+    }
+    .optionParent{
+        height: 200px;
     }
 }

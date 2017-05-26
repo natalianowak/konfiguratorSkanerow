@@ -85,8 +85,8 @@ a {
     color: white;
     width: 66.67%;
     float: left;
-    height: 19%;
-    min-height: 131px;
+    height: 146.3px;
+
 
 }
 
@@ -129,8 +129,8 @@ a {
 
 .form1 {
     position: relative;
-    height: 19%;
-    min-height: 131px;
+    height: 146.3px;
+
     background-color: black;
     float: right;
 
@@ -319,7 +319,7 @@ input[type=checkbox]:checked {
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1124px) {
     * {
         font-size: 0.97em;
     }

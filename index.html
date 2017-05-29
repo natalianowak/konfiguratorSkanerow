@@ -27,15 +27,9 @@
 <body>
 
 
-<!--//geolokacja nie dziala-->
-<!--<p>Click the button to get your coordinates.</p>-->
-
-<!--<button onclick="getLocation()">Try It</button>-->
-
-<!--<p id="demo"></p>-->
 <div style="position: relative;" class="header">
 
-    <div style="position: absolute; width: 100%; bottom: 15%; z-index: 1; ">
+    <div style="position: absolute; width: 100%; bottom: 15%; z-index: 2; ">
         <img class="logo" src="img/LOGO.png">
 
         <img class="dzielaca" src="img/liniaDzielaca.png">
@@ -53,7 +47,7 @@
 
 <div class="about">
     <div style="width: 100%">
-        <!--<img class="warstwa" style="margin-top:-1%;margin-left: -6%; position: absolute; z-index: 0" src="img/Warstwa_4.png">-->
+
         <p class="color1 bold">Jak to działa?</p>
         <p><span class="color1 bold">1: </span> <span class="light">Znajdź swoją lokalizację</span></p>
         <p><span class="color1 bold">2: </span> <span class="light">Określ interesujący Cię obszar skanowania</span></p>
@@ -78,8 +72,7 @@
 <div id="map"></div>
 
 <div class="break" style="z-index: 2;"></div>
-<!--<div id="latitude"></div>-->
-<!--<div id="longitude"></div>-->
+
 
 <!--óóźźżśąćććććzęął-->
 
@@ -93,23 +86,35 @@
             <p class="first bold" style="color:FBFC03">Funkcje dodatkowe:</p>
             <div class="mobile">
 
-                <div class="line">
 
-                    <input style="display: inline-block;" type="checkbox" id="option1"> <span class="light">statystyki stworków IV</span><br>
-
-                </div>
-
-                <div class="line">
-
-                    <input style="display: inline-block;" type="checkbox" id="option2"> <span class="light">powiadomienia PUSH na komórkę</span><br>
-
-                </div>
+                <!--<label class="checkbox">-->
+                <!--<input type="checkbox"/>-->
+                <!--<span></span>Test-->
+                <!--</label>-->
 
                 <div class="line">
-                    <input style="display: inline-block;" type="checkbox" id="option3"> <span class="light">możliwość personalizacji mapy i kolorów</span><br>
+
+                    <label class="checkbox">
+                        <input type="checkbox" id="option1"/>
+                        <span class="light"></span>
+                    </label>
+                    <span class="light" style="margin-right:15px;margin-left:3px;">statystyki stworków IV</span>
                 </div>
+                <div class="line">
 
-
+                    <label class="checkbox">
+                        <input type="checkbox" id="option2"/>
+                        <span class="light"></span>
+                    </label>
+                    <span class="light" style="margin-right:15px;margin-left:3px;">powiadomienia PUSH na komórkę</span>
+                </div>
+                <div class="line">
+                    <label class="checkbox">
+                        <input type="checkbox" id="option3"/>
+                        <span class="light"></span>
+                    </label>
+                    <span class="light" style="margin-right:15px;margin-left:3px;">możliwość personalizacji mapy i kolorów</span>
+                </div>
             </div>
         </div>
 

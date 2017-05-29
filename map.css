@@ -170,6 +170,7 @@ a {
     background-color: #FBFC03;
     border-width: 0;
     font-family: Oswald;
+    cursor: pointer;
 }
 
 .footer {

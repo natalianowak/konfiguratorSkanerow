@@ -28,8 +28,12 @@ p {
 
  body {
    display: flex;
+     display: -webkit-flex;
+
     flex-direction: column;
-    /*height: 100%;*/
+     -webkit-flex-direction: column;
+     -moz-flex-direction:column;
+    height: 100%;
     margin: 0;
     padding: 0;
     /*min-height: 714px;*/

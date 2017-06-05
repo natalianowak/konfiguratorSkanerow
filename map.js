@@ -45,13 +45,15 @@
         var distance2 = google.maps.geometry.spherical.computeDistanceBetween(ne, se) / 1000; //w km
         area = Math.round(distance1 * distance2); //Obliczenie pola powierzchni prostokąta w km2
 
-        var contentString = '<b>Wielkosc zaznaczonego obszaru to:</b><br>' + area + ' km2' + '<br>';
+        var contentString = '<b>Wielkosc zaznaczonego obszaru to:</b><br>' + area + ' km2' + '</br>';
 
         // Set the info window's content and position.
         infoWindow.setContent(contentString);
         infoWindow.setPosition(ne);
 
         infoWindow.open(map);
+
+
 
         // oblicz cene tylko za powierzchnie bez dodatkowych opcji
         countFinalPrice();
@@ -261,6 +263,8 @@
         var optionClickedHandler = function () {
             countFinalPrice();
         };
+
+
 
         $('input[id^="option1"]').click(optionClickedHandler);
         $('input[id^="option2"]').click(optionClickedHandler);

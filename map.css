@@ -343,6 +343,9 @@ label.checkbox :checked + span {
     z-index: 1;
     margin-top:7px;
 }
+.miastoDivMobile{
+    display: none;
+}
 .gradient{
     height:190px;
 }
@@ -418,7 +421,7 @@ label.checkbox :checked + span {
 
     .line2 {
         display: inline-block;
-        margin-bottom: 5%;
+        margin-bottom: 19px;
 
     }
 
@@ -509,6 +512,9 @@ label.checkbox :checked + span {
     .miasto {
         display: none;
     }
+    .miastoDiv{
+        display: none;
+    }
 
     .gradient {
         display: none;
@@ -534,6 +540,16 @@ label.checkbox :checked + span {
         visibility: visible;
         width: 100%;
         height: 165px;
+    }
+    .miastoDivMobile{
+        display: inherit;
+        z-index: 2;
+        width: 100%;
+        background-image: url("img/miastoMobile.png");
+        position: absolute;
+        height: 165px;
+        top: 24px;
+        background-repeat: repeat-x;
     }
 
     .faceebokMobile{

@@ -361,6 +361,9 @@ label.checkbox :checked + span {
     * {
         font-size: 0.97em;
     }
+    body{
+        height: auto;
+    }
 
     .header {
         height: 46px;

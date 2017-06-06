@@ -145,6 +145,7 @@ a {
 }
 
 .option {
+    position: relative;
     height: 27%;
     margin-bottom: 1%;
     width: 66.67%;
